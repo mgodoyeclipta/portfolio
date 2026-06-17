@@ -139,6 +139,18 @@ export const DATA = {
       description:
         "Developed software for two major projects: CIDREL for the Government of Santa Fe Province and SAE for Encode SA. Tech stack: ASP.NET (.NET Framework 4.7.2), VB.NET, SOAP Web Services, MS SQL Server (stored procedures), Agile/Scrum, GitLab.",
     },
+    {
+      company: "datSolutions",
+      href: "",
+      badges: [],
+      location: "Córdoba, Argentina · On-site",
+      title: "IT Support Technician",
+      logoUrl: "/datsolutions_logo.jpeg",
+      start: "2019",
+      end: "2021",
+      description:
+        "Provided technical support to Colegio de Escribanos de la Provincia de Córdoba and PROMA SSA. Managed infrastructure using VMware ESXi, vSphere, UniFi, MikroTik, Cisco, Linux, FreeBSD, and Windows. Also served as HP-authorized service center technician performing hardware and software repairs.",
+    },
   ],
   education: [
     {
