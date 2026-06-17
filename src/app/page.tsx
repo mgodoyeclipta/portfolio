@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import CertificationsSection from "@/components/section/certifications-section";
 import ContactSection from "@/components/section/contact-section";
 import HackathonsSection from "@/components/section/hackathons-section";
 import ProjectsSection from "@/components/section/projects-section";
@@ -112,6 +113,11 @@ export default function Page() {
             ))}
           </div>
         </div>
+      </section>
+      <section id="certifications">
+        <BlurFade delay={BLUR_FADE_DELAY * 9}>
+          <CertificationsSection />
+        </BlurFade>
       </section>
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-4">

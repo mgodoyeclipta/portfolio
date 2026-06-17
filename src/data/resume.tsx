@@ -73,7 +73,7 @@ export const DATA = {
       badges: [],
       location: "Córdoba, Argentina · Hybrid",
       title: "Software Engineer",
-      logoUrl: "",
+      logoUrl: "/mercadolibre_logo.jpeg",
       start: "March 2025",
       end: "June 2026",
       description:
@@ -85,7 +85,7 @@ export const DATA = {
       badges: ["Founder"],
       location: "Córdoba, Argentina · Remote",
       title: "Co-founder & Software Engineer",
-      logoUrl: "",
+      logoUrl: "/eclipta_argentina_logo.jpeg",
       start: "January 2025",
       end: "Present",
       description:
@@ -97,7 +97,7 @@ export const DATA = {
       badges: [],
       location: "Córdoba, Argentina · Hybrid",
       title: "Software Development Professor",
-      logoUrl: "",
+      logoUrl: "/universidad_blas_pascal_logo.jpeg",
       start: "January 2024",
       end: "September 2024",
       description:
@@ -109,7 +109,7 @@ export const DATA = {
       badges: [],
       location: "Argentina · Hybrid",
       title: "Full Stack Developer",
-      logoUrl: "",
+      logoUrl: "/bitsion_logo.jpeg",
       start: "August 2022",
       end: "March 2025",
       description:
@@ -121,11 +121,23 @@ export const DATA = {
       badges: [],
       location: "Córdoba, Argentina · Hybrid",
       title: "Business Application Developer",
-      logoUrl: "",
+      logoUrl: "/cedi_tech_consulting_logo.jpeg",
       start: "January 2022",
       end: "August 2022",
       description:
         "Developed business applications using .NET, Oracle SQL, Microsoft Azure, Dynamics 365, Power BI, Power Automate, and Power Apps. Worked with Agile/Scrum methodology. Team recognized as a Microsoft Inspire 2022 Latin America success case.",
+    },
+    {
+      company: "Encode S.A.",
+      href: "",
+      badges: [],
+      location: "Córdoba, Argentina · On-site",
+      title: "Full Stack Developer",
+      logoUrl: "/encode_s_a__logo.jpeg",
+      start: "2021",
+      end: "2022",
+      description:
+        "Developed software for two major projects: CIDREL for the Government of Santa Fe Province and SAE for Encode SA. Tech stack: ASP.NET (.NET Framework 4.7.2), VB.NET, SOAP Web Services, MS SQL Server (stored procedures), Agile/Scrum, GitLab.",
     },
   ],
   education: [
@@ -133,7 +145,7 @@ export const DATA = {
       school: "Universidad Blas Pascal",
       href: "https://ubp.edu.ar",
       degree: "Bachelor's Degree in Computer Science Engineering",
-      logoUrl: "",
+      logoUrl: "/universidad_blas_pascal_logo.jpeg",
       start: "2019",
       end: "Present",
     },
@@ -141,7 +153,7 @@ export const DATA = {
       school: "Universidad Nacional de Córdoba",
       href: "https://unc.edu.ar",
       degree: "Intensive English Course",
-      logoUrl: "",
+      logoUrl: "/universidad_nacional_cordoba_logo.jpeg",
       start: "2016",
       end: "2018",
     },
@@ -171,6 +183,63 @@ export const DATA = {
       video: "",
     },
   ],
+  certifications: [
+    {
+      name: "Performance Hands On",
+      issuer: "Egg Live",
+      logoUrl: "/egglive_logo.jpeg",
+      date: "Jul 2025",
+      href: "",
+    },
+    {
+      name: "Curso Básico de MongoDB",
+      issuer: "Platzi",
+      logoUrl: "/platzi_inc_logo.jpeg",
+      date: "Aug 2022",
+      href: "",
+    },
+    {
+      name: "Code Review: Best Practices",
+      issuer: "Pluralsight",
+      logoUrl: "/pluralsight_logo.jpeg",
+      date: "Aug 2022",
+      href: "",
+    },
+    {
+      name: "EF SET English Certificate 62/100 (C1 Advanced)",
+      issuer: "EF SET",
+      logoUrl: "/efset_logo.jpeg",
+      date: "Jun 2022",
+      href: "",
+    },
+    {
+      name: "Curso de C# .NET desde cero hasta lo mas avanzado full stack",
+      issuer: "Udemy",
+      logoUrl: "/udemy_logo.jpeg",
+      date: "2021",
+      href: "",
+    },
+    {
+      name: "JavaScript - Basics to Advanced [step by step (2021)]",
+      issuer: "Udemy",
+      logoUrl: "/udemy_logo.jpeg",
+      date: "2021",
+      href: "",
+    },
+    {
+      name: "Visual Basic .NET Programming for Complete Beginners",
+      issuer: "Udemy",
+      logoUrl: "/udemy_logo.jpeg",
+      date: "2021",
+      href: "",
+    },
+  ] as {
+    name: string;
+    issuer: string;
+    logoUrl: string;
+    date: string;
+    href: string;
+  }[],
   hackathons: [] as {
     title: string;
     dates: string;
