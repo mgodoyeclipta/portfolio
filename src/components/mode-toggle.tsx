@@ -1,23 +1,35 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { useEffect } from "react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
+import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler";
 
 export function ModeToggle({ className }: { className?: string }) {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
+
+  // Keep next-themes in sync when the toggler toggles the DOM class directly
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      const isDark = document.documentElement.classList.contains("dark");
+      const nextTheme = isDark ? "dark" : "light";
+      if (nextTheme !== resolvedTheme) {
+        setTheme(nextTheme);
+      }
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+    return () => observer.disconnect();
+  }, [resolvedTheme, setTheme]);
 
   return (
-    <Button
-      type="button"
-      variant="link"
-      size="icon"
-      className={cn(className)}
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-    >
-      <SunIcon className="h-full w-full" />
-      <MoonIcon className="hidden h-full w-full" />
-    </Button>
+    <AnimatedThemeToggler
+      className={cn(
+        "size-full flex items-center justify-center text-muted-foreground hover:text-foreground [&_svg]:size-4",
+        className
+      )}
+    />
   );
 }
