@@ -71,8 +71,8 @@ export default function RootLayout({
           geistMono.variable
         )}
       >
-        <I18nProvider>
         <ThemeProvider attribute="class" defaultTheme="light">
+        <I18nProvider>
           <TooltipProvider delayDuration={0}>
             <div className="absolute inset-0 top-0 left-0 right-0 h-[100px] overflow-hidden z-0">
               <FlickeringGrid
@@ -90,8 +90,8 @@ export default function RootLayout({
             </div>
             <Navbar />
           </TooltipProvider>
-        </ThemeProvider>
         </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

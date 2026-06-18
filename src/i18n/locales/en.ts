@@ -3,7 +3,7 @@ const en = {
   description:
     "Co-founder & Software Engineer at Eclipta. Building AI-powered products and automation solutions.",
   summary:
-    "Software engineer focused on building scalable systems and AI-powered products. Co-founded [Eclipta](https://eclipta.ar) to build intelligent messaging and automation solutions. Previously a Software Engineer at [Mercado Libre](/#work) in the checkout team using Java/Spring Boot and hexagonal architecture. Spent 2+ years at [Bitsion](/#work) developing Angular/.NET systems for universities and telcos, and also [taught Angular](/#work) at Universidad Blas Pascal.",
+    "I'm passionate about technology — I've spent over 10 years in the industry breaking and fixing things. That path led me to become a Software Engineer at [Mercado Libre](/#work) on the checkout team, and today I'm building [Eclipta](https://eclipta.ar), my own AI-powered SaaS. Always open to new paths and innovation.",
 
   // Section headings
   about: "About",
