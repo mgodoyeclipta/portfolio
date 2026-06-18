@@ -2,6 +2,8 @@
 
 **Live demo:** https://www.matigodoy.com.ar/
 
+![Demo](public/demo.gif)
+
 ## What's different from the original
 
 - **i18n (EN/ES)** — browser language auto-detection, toggle button in navbar, localStorage persistence
@@ -17,7 +19,7 @@
 1. Clone and install
 
    ```bash
-   git clone https://github.com/mgodoyeclipta/portfolio
+   git clone https://github.com/matigodoy/portfolio
    cd portfolio
    npm install
    ```

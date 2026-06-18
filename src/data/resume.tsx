@@ -13,8 +13,7 @@ export const DATA = {
   url: "https://matiasgodoy.dev",
   location: "Córdoba, Argentina",
   locationLink: "https://www.google.com/maps/place/Cordoba,+Argentina/",
-  description:
-    "Co-founder & Software Engineer at Eclipta. Building AI-powered products and automation solutions.",
+  description: "Come in and get to know me a little.",
   summary:
     "Software engineer focused on building scalable systems and AI-powered products. Co-founded [Eclipta](https://www.linkedin.com/company/eclipta-argentina) to build intelligent messaging and automation solutions. Previously a Software Engineer at [Mercado Libre](/#work) in the checkout team using Java/Spring Boot and hexagonal architecture. Spent 2+ years at [Bitsion](/#work) developing Angular/.NET systems for universities and telcos, and also [taught Angular](/#work) at Universidad Blas Pascal.",
   avatarUrl: "/me.png",
@@ -34,7 +33,7 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/mgodoyeclipta",
+        url: "https://github.com/matigodoy",
         icon: Icons.github,
         navbar: true,
       },
