@@ -2,6 +2,8 @@
 
 Personal fork of [dillionverma/portfolio](https://github.com/dillionverma/portfolio) — a Next.js + shadcn/ui + Magic UI portfolio template. Feel free to fork this repo and make it your own.
 
+**Live demo:** https://portfolio-jet-one-j56ysj3a74.vercel.app/
+
 ## What's different from the original
 
 - **i18n (EN/ES)** — browser language auto-detection, toggle button in navbar, localStorage persistence
