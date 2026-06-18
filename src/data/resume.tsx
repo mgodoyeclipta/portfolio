@@ -16,7 +16,7 @@ export const DATA = {
   description:
     "Co-founder & Software Engineer at Eclipta. Building AI-powered products and automation solutions.",
   summary:
-    "Software engineer focused on building scalable systems and AI-powered products. Co-founded [Eclipta](https://eclipta.ar) to build intelligent messaging and automation solutions. Previously a Software Engineer at [Mercado Libre](/#work) in the checkout team using Java/Spring Boot and hexagonal architecture. Spent 2+ years at [Bitsion](/#work) developing Angular/.NET systems for universities and telcos, and also [taught Angular](/#work) at Universidad Blas Pascal.",
+    "Software engineer focused on building scalable systems and AI-powered products. Co-founded [Eclipta](https://www.linkedin.com/company/eclipta-argentina) to build intelligent messaging and automation solutions. Previously a Software Engineer at [Mercado Libre](/#work) in the checkout team using Java/Spring Boot and hexagonal architecture. Spent 2+ years at [Bitsion](/#work) developing Angular/.NET systems for universities and telcos, and also [taught Angular](/#work) at Universidad Blas Pascal.",
   avatarUrl: "/me.png",
   skills: [
     { name: "Java", icon: Java },
@@ -80,7 +80,7 @@ export const DATA = {
     },
     {
       company: "Eclipta",
-      href: "https://eclipta.ar",
+      href: "https://www.linkedin.com/company/eclipta-argentina",
       badges: ["Founder"],
       location: "Córdoba, Argentina · Remote",
       title: "Co-founder & Software Engineer",

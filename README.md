@@ -5,6 +5,9 @@ Personal fork of [dillionverma/portfolio](https://github.com/dillionverma/portfo
 ## What's different from the original
 
 - **i18n (EN/ES)** — browser language auto-detection, toggle button in navbar, localStorage persistence
+- **Animated dark/light toggle** — MagicUI View Transitions API circle reveal animation
+- **Aurora text** — animated gradient effect on hero name
+- **Markdown in work descriptions** — bold, italic, inline code support for highlighting tech stack
 - **Updated packages** — Next.js 16, Tailwind CSS v4, latest shadcn/ui
 - **Certifications section** — dedicated section for certs alongside education
 - **Custom favicon & assets**

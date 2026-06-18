@@ -3,7 +3,7 @@ const en = {
   description:
     "Co-founder & Software Engineer at Eclipta. Building AI-powered products and automation solutions.",
   summary:
-    "I'm passionate about technology — I've spent over 10 years in the industry breaking and fixing things. That path led me to become a Software Engineer at [Mercado Libre](/#work) on the checkout team, and today I'm building [Eclipta](https://eclipta.ar), my own AI-powered SaaS. Always open to new paths and innovation.",
+    "I'm passionate about technology — I've spent over 10 years in the industry breaking and fixing things. That path led me to become a Software Engineer at [Mercado Libre](/#work) on the checkout team, and today I'm building [Eclipta](https://www.linkedin.com/company/eclipta-argentina), my own AI-powered SaaS. Always open to new paths and innovation.",
 
   // Section headings
   about: "About",
