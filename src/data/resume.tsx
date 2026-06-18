@@ -1,6 +1,5 @@
-import type { ReactNode } from "react";
+import type { ReactNode, ComponentType } from "react";
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { Docker } from "@/components/ui/svgs/docker";
@@ -24,16 +23,14 @@ export const DATA = {
     { name: "C# / .NET", icon: Csharp },
     { name: "Docker", icon: Docker },
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [] as { href: string; icon: ComponentType; label: string }[],
   contact: {
     email: "mati_godoy@outlook.com",
     tel: "",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/matigodoy",
+        url: "https://github.com/matigodoy/portfolio",
         icon: Icons.github,
         navbar: true,
       },
@@ -171,7 +168,7 @@ export const DATA = {
   projects: [
     {
       title: "Chadbot",
-      href: "https://chadbot.eclipta.ar",
+      href: "https://chadbot.eclipta.ar/app",
       dates: "Jan 2025 - Present",
       active: true,
       description:
@@ -185,11 +182,86 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://chadbot.eclipta.ar",
+          href: "https://chadbot.eclipta.ar/app",
           icon: <Icons.globe className="size-3" />,
         },
       ],
       image: "/chadbot_logo.jpg",
+      video: "",
+    },
+    {
+      title: "Chadbot Landing",
+      href: "https://chadbot.eclipta.ar/",
+      dates: "Jan 2025 - Present",
+      active: true,
+      description:
+        "Landing page for Chadbot, the AI-powered messaging platform by Eclipta.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://chadbot.eclipta.ar/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/chadbot-landing.png",
+      video: "",
+    },
+    {
+      title: "MD Equipamientos",
+      href: "https://md-equipamientos.com/",
+      dates: "2024",
+      active: true,
+      description:
+        "Institutional website and product catalog for a furniture factory.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://md-equipamientos.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/md-equipamientos.jpeg",
+      video: "",
+    },
+    {
+      title: "Mundosegur",
+      href: "https://mundosegur.com/",
+      dates: "2024",
+      active: true,
+      description:
+        "Institutional website for a private security company.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://mundosegur.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/mundosegur.jpg",
+      video: "",
+    },
+    {
+      title: "Barbarie",
+      href: "https://barbarie.com.ar/",
+      dates: "2024",
+      active: true,
+      description: "Website for a barbershop.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      links: [
+        {
+          type: "Website",
+          href: "https://barbarie.com.ar/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/barbarie.jpg",
       video: "",
     },
   ],
