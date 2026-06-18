@@ -13,13 +13,55 @@ import WorkSection from "@/components/section/work-section";
 import { ArrowUpRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AuroraText } from "@/components/magicui/aurora-text";
-import { HyperText, useHyperText } from "@/components/magicui/hyper-text";
+import { TextAnimate } from "@/components/magicui/text-animate";
+import { motion } from "motion/react";
+import { useMemo } from "react";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
-  const { t } = useTranslation();
-  const scrambledSummary = useHyperText(t("summary"));
+  const { t, i18n } = useTranslation();
+
+  const markdownComponents = useMemo(() => ({
+    p({ children }: { children?: React.ReactNode }) {
+      const segments: React.ReactNode[] = [];
+      const process = (child: React.ReactNode) => {
+        if (typeof child === "string") {
+          child.split(/(\s+)/).forEach((part) => segments.push(part));
+        } else if (Array.isArray(child)) {
+          child.forEach(process);
+        } else {
+          segments.push(child);
+        }
+      };
+      process(children);
+      return (
+        <motion.p
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.05 } } }}
+          initial="hidden"
+          animate="visible"
+        >
+          {segments.map((seg, i) =>
+            typeof seg === "string" && /^\s+$/.test(seg) ? (
+              <span key={i}>{seg}</span>
+            ) : (
+              <motion.span
+                key={i}
+                variants={{
+                  hidden: { opacity: 0, filter: "blur(8px)", y: 16 },
+                  visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.35, ease: "easeOut" } },
+                }}
+                className="inline"
+              >
+                {seg}
+              </motion.span>
+            )
+          )}
+        </motion.p>
+      );
+    },
+  }), [i18n.language]);
+
   return (
     <main className="min-h-dvh flex flex-col gap-14 relative">
       <section id="hero">
@@ -28,13 +70,20 @@ export default function Page() {
             <div className="gap-2 flex flex-col order-2 md:order-1">
               <BlurFade delay={BLUR_FADE_DELAY} yOffset={8}>
                 <h1 className="text-4xl font-semibold tracking-tighter sm:text-5xl lg:text-6xl">
-                  <HyperText>{t("greeting")}</HyperText>{" "}
-                  <AuroraText>{DATA.name.split(" ")[0]}</AuroraText>
+                  <TextAnimate>{t("greeting")}</TextAnimate>{" "}
+                  <motion.span
+                    initial={{ opacity: 0, filter: "blur(8px)", y: 16 }}
+                    animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
+                    transition={{ duration: 0.35, ease: "easeOut" }}
+                    className="inline-block"
+                  >
+                    <AuroraText>{DATA.name.split(" ")[0]}</AuroraText>
+                  </motion.span>
                 </h1>
               </BlurFade>
               <BlurFade delay={BLUR_FADE_DELAY} yOffset={8}>
                 <p className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl">
-                  <HyperText>{t("description")}</HyperText>
+                  <TextAnimate>{t("description")}</TextAnimate>
                 </p>
               </BlurFade>
             </div>
@@ -50,11 +99,11 @@ export default function Page() {
       <section id="about">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <h2 className="text-2xl font-bold"><HyperText>{t("about")}</HyperText></h2>
+            <h2 className="text-2xl font-bold"><TextAnimate>{t("about")}</TextAnimate></h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
-              <Markdown>{scrambledSummary}</Markdown>
+              <Markdown components={markdownComponents}>{t("summary")}</Markdown>
             </div>
           </BlurFade>
         </div>
@@ -62,7 +111,7 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-2xl font-bold"><HyperText>{t("workExperience")}</HyperText></h2>
+            <h2 className="text-2xl font-bold"><TextAnimate>{t("workExperience")}</TextAnimate></h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
             <WorkSection />
@@ -72,7 +121,7 @@ export default function Page() {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-2xl font-bold"><HyperText>{t("education")}</HyperText></h2>
+            <h2 className="text-2xl font-bold"><TextAnimate>{t("education")}</TextAnimate></h2>
           </BlurFade>
           <div className="flex flex-col gap-8">
             {DATA.education.map((education, index) => (
@@ -108,7 +157,7 @@ export default function Page() {
                   </div>
                   <div className="flex items-center gap-1 text-sm tabular-nums text-muted-foreground text-right flex-none">
                     <span>
-                      {education.start} - {(!education.end || education.end === "Present") ? <HyperText>{t("present")}</HyperText> : education.end}
+                      {education.start} - {(!education.end || education.end === "Present") ? <TextAnimate>{t("present")}</TextAnimate> : education.end}
                     </span>
                   </div>
                 </Link>
@@ -125,7 +174,7 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-2xl font-bold"><HyperText>{t("skills")}</HyperText></h2>
+            <h2 className="text-2xl font-bold"><TextAnimate>{t("skills")}</TextAnimate></h2>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
             {DATA.skills.map((skill, id) => (
