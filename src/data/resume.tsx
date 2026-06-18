@@ -76,7 +76,7 @@ export const DATA = {
       start: "March 2025",
       end: "June 2026",
       description:
-        "Software Engineer in the checkout team. Built and maintained services using Java with Spring Boot in hexagonal architecture, following clean code practices and code review workflows. Used Datadog, Grafana, Kibana, and New Relic for observability. Leveraged AI-assisted development with Cursor, Windsurf, GitHub Copilot, and Claude.",
+        "Software Engineer in the **checkout team**. Built and maintained services using **Java** with **Spring Boot** in **hexagonal architecture**, following clean code practices and code review workflows. Used **Datadog**, **Grafana**, **Kibana**, and **New Relic** for observability. Leveraged AI-assisted development with **Cursor**, **Windsurf**, **GitHub Copilot**, and **Claude**.",
     },
     {
       company: "Eclipta",
@@ -88,7 +88,7 @@ export const DATA = {
       start: "January 2025",
       end: "Present",
       description:
-        "Co-founded Eclipta and lead development of Chadbot, an AI-powered messaging platform. Design, develop and ship software with a modern tech stack including AI services, observability tooling, automated deployments, and workflow automation to help businesses scale their operations.",
+        "Co-founded **Eclipta** and lead development of **Chadbot**, an **AI-powered** messaging platform. Design, develop and ship software with a modern tech stack including **AI services**, **observability** tooling, **automated deployments**, and **workflow automation** to help businesses scale their operations.",
     },
     {
       company: "Universidad Blas Pascal",
@@ -100,7 +100,7 @@ export const DATA = {
       start: "January 2024",
       end: "September 2024",
       description:
-        "Taught an Angular frontend development course at the Digital Skill Academy, preparing students with the knowledge and skills required by the software development job market.",
+        "Taught an **Angular** frontend development course at the **Digital Skill Academy**, preparing students with the knowledge and skills required by the software development job market.",
     },
     {
       company: "Bitsion",
@@ -112,7 +112,7 @@ export const DATA = {
       start: "August 2022",
       end: "March 2025",
       description:
-        "Full stack development across multiple roles and projects. Built tucarpeta+® using Atomic Design for Universidad Siglo 21, Universidad Kennedy, and other clients using Angular 15–18, .NET Framework, MongoDB, and Jenkins/Azure DevOps. Developed Paycloud, a mobile wallet app published on iOS and Android using FlutterFlow. Earlier project: tucarpeta© for Claro Argentina with AngularJS, .NET, Razor, and MongoDB.",
+        "Full stack development across multiple roles and projects. Built **tucarpeta+®** using **Atomic Design** for Universidad Siglo 21, Universidad Kennedy, and other clients using **Angular 15–18**, **.NET Framework**, **MongoDB**, and **Jenkins**/**Azure DevOps**. Developed **Paycloud**, a mobile wallet app published on **iOS** and **Android** using **FlutterFlow**. Earlier project: **tucarpeta©** for **Claro Argentina** with **AngularJS**, **.NET**, **Razor**, and **MongoDB**.",
     },
     {
       company: "CEDI Tech Consulting",
@@ -124,7 +124,7 @@ export const DATA = {
       start: "January 2022",
       end: "August 2022",
       description:
-        "Developed business applications using .NET, Oracle SQL, Microsoft Azure, Dynamics 365, Power BI, Power Automate, and Power Apps. Worked with Agile/Scrum methodology. Team recognized as a Microsoft Inspire 2022 Latin America success case.",
+        "Developed business applications using **.NET**, **Oracle SQL**, **Microsoft Azure**, **Dynamics 365**, **Power BI**, **Power Automate**, and **Power Apps**. Worked with **Agile/Scrum** methodology. Team recognized as a **Microsoft Inspire 2022** Latin America success case.",
     },
     {
       company: "Encode S.A.",
@@ -136,7 +136,7 @@ export const DATA = {
       start: "2021",
       end: "2022",
       description:
-        "Developed software for two major projects: CIDREL for the Government of Santa Fe Province and SAE for Encode SA. Tech stack: ASP.NET (.NET Framework 4.7.2), VB.NET, SOAP Web Services, MS SQL Server (stored procedures), Agile/Scrum, GitLab.",
+        "Developed software for two major projects: **CIDREL** for the Government of Santa Fe Province and **SAE** for Encode SA. Tech stack: **ASP.NET** (.NET Framework 4.7.2), **VB.NET**, **SOAP Web Services**, **MS SQL Server** (stored procedures), **Agile/Scrum**, **GitLab**.",
     },
     {
       company: "datSolutions",
@@ -148,7 +148,7 @@ export const DATA = {
       start: "2019",
       end: "2021",
       description:
-        "Provided technical support to Colegio de Escribanos de la Provincia de Córdoba and PROMA SSA. Managed infrastructure using VMware ESXi, vSphere, UniFi, MikroTik, Cisco, Linux, FreeBSD, and Windows. Also served as HP-authorized service center technician performing hardware and software repairs.",
+        "Provided technical support to Colegio de Escribanos de la Provincia de Córdoba and PROMA SSA. Managed infrastructure using **VMware ESXi**, **vSphere**, **UniFi**, **MikroTik**, **Cisco**, **Linux**, **FreeBSD**, and **Windows**. Also served as **HP**-authorized service center technician performing hardware and software repairs.",
     },
   ],
   education: [

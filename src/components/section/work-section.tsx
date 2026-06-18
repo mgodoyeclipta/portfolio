@@ -2,6 +2,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Markdown from "react-markdown";
 import {
   Accordion,
   AccordionContent,
@@ -79,7 +80,7 @@ export default function WorkSection() {
             </div>
           </AccordionTrigger>
           <AccordionContent className="p-0 ml-13 text-xs sm:text-sm text-muted-foreground">
-            {work.description}
+            <Markdown>{work.description}</Markdown>
           </AccordionContent>
         </AccordionItem>
       ))}
