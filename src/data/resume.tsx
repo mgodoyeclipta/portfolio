@@ -73,8 +73,8 @@ export const DATA = {
       location: "Córdoba, Argentina · Hybrid",
       title: "Software Engineer",
       logoUrl: "/mercadolibre_logo.jpeg",
-      start: "March 2025",
-      end: "June 2026",
+      start: "Mar 2025",
+      end: "Jun 2026",
       description:
         "Software Engineer in the **checkout team**. Built and maintained services using **Java** with **Spring Boot** in **hexagonal architecture**, following clean code practices and code review workflows. Used **Datadog**, **Grafana**, **Kibana**, and **New Relic** for observability. Leveraged AI-assisted development with **Cursor**, **Windsurf**, **GitHub Copilot**, and **Claude**.",
     },
@@ -85,7 +85,7 @@ export const DATA = {
       location: "Córdoba, Argentina · Remote",
       title: "Co-founder & Software Engineer",
       logoUrl: "/eclipta_argentina_logo.jpeg",
-      start: "January 2025",
+      start: "Jan 2025",
       end: "Present",
       description:
         "Co-founded **Eclipta** and lead development of **Chadbot**, an **AI-powered** messaging platform. Design, develop and ship software with a modern tech stack including **AI services**, **observability** tooling, **automated deployments**, and **workflow automation** to help businesses scale their operations.",
@@ -97,8 +97,8 @@ export const DATA = {
       location: "Córdoba, Argentina · Hybrid",
       title: "Software Development Professor",
       logoUrl: "/universidad_blas_pascal_logo.jpeg",
-      start: "January 2024",
-      end: "September 2024",
+      start: "Jan 2024",
+      end: "Sep 2024",
       description:
         "Taught an **Angular** frontend development course at the **Digital Skill Academy**, preparing students with the knowledge and skills required by the software development job market.",
     },
@@ -109,8 +109,8 @@ export const DATA = {
       location: "Argentina · Hybrid",
       title: "Full Stack Developer",
       logoUrl: "/bitsion_logo.jpeg",
-      start: "August 2022",
-      end: "March 2025",
+      start: "Aug 2022",
+      end: "Mar 2025",
       description:
         "Full stack development across multiple roles and projects. Built **tucarpeta+®** using **Atomic Design** for Universidad Siglo 21, Universidad Kennedy, and other clients using **Angular 15–18**, **.NET Framework**, **MongoDB**, and **Jenkins**/**Azure DevOps**. Developed **Paycloud**, a mobile wallet app published on **iOS** and **Android** using **FlutterFlow**. Earlier project: **tucarpeta©** for **Claro Argentina** with **AngularJS**, **.NET**, **Razor**, and **MongoDB**.",
     },
@@ -121,8 +121,8 @@ export const DATA = {
       location: "Córdoba, Argentina · Hybrid",
       title: "Business Application Developer",
       logoUrl: "/cedi_tech_consulting_logo.jpeg",
-      start: "January 2022",
-      end: "August 2022",
+      start: "Jan 2022",
+      end: "Aug 2022",
       description:
         "Developed business applications using **.NET**, **Oracle SQL**, **Microsoft Azure**, **Dynamics 365**, **Power BI**, **Power Automate**, and **Power Apps**. Worked with **Agile/Scrum** methodology. Team recognized as a **Microsoft Inspire 2022** Latin America success case.",
     },
