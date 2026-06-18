@@ -37,7 +37,7 @@ export function ScrollToTop() {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               aria-label="Scroll to top"
             >
-              <DockIcon className="rounded-3xl cursor-pointer size-full bg-background p-0 text-muted-foreground hover:text-foreground hover:bg-muted backdrop-blur-3xl border border-border transition-colors">
+              <DockIcon className="rounded-3xl cursor-pointer size-full bg-background p-0 text-muted-foreground hover:text-foreground hover:bg-muted active:bg-muted active:text-foreground backdrop-blur-3xl border border-border transition-colors">
                 <ArrowUp className="size-full rounded-sm overflow-hidden object-contain" />
               </DockIcon>
             </button>
