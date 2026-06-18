@@ -5,6 +5,13 @@ import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { Docker } from "@/components/ui/svgs/docker";
 import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
+import { OpenAI } from "@/components/ui/svgs/openai";
+import { Anthropic } from "@/components/ui/svgs/anthropic";
+import { ZAI } from "@/components/ui/svgs/z-ai";
+import { OpenCode } from "@/components/ui/svgs/opencode";
+import { MongoDB } from "@/components/ui/svgs/mongodb";
+import { Postgresql } from "@/components/ui/svgs/postgresql";
+import { SQL } from "@/components/ui/svgs/sql";
 
 export const DATA = {
   name: "Matias Godoy",
@@ -22,6 +29,13 @@ export const DATA = {
     { name: "Node.js", icon: Nodejs },
     { name: "C# / .NET", icon: Csharp },
     { name: "Docker", icon: Docker },
+    { name: "OpenAI", icon: OpenAI },
+    { name: "Claude", icon: Anthropic },
+    { name: "z.AI", icon: ZAI },
+    { name: "OpenCode", icon: OpenCode },
+    { name: "MongoDB", icon: MongoDB },
+    { name: "PostgreSQL", icon: Postgresql },
+    { name: "SQL", icon: SQL },
   ],
   navbar: [] as { href: string; icon: ComponentType; label: string }[],
   contact: {
@@ -192,7 +206,7 @@ export const DATA = {
     {
       title: "Chadbot Landing",
       href: "https://chadbot.eclipta.ar/",
-      dates: "Jan 2025 - Present",
+      dates: "Jan 2026 - Present",
       active: true,
       description:
         "Landing page for Chadbot, the AI-powered messaging platform by Eclipta.",
@@ -214,7 +228,7 @@ export const DATA = {
     {
       title: "MD Equipamientos",
       href: "https://md-equipamientos.com/",
-      dates: "2024",
+      dates: "2026",
       active: true,
       description:
         "Institutional website and product catalog for a furniture factory.",
@@ -232,7 +246,7 @@ export const DATA = {
     {
       title: "Mundosegur",
       href: "https://mundosegur.com/",
-      dates: "2024",
+      dates: "2026",
       active: true,
       description:
         "Institutional website for a private security company.",
@@ -250,7 +264,7 @@ export const DATA = {
     {
       title: "Barbarie",
       href: "https://barbarie.com.ar/",
-      dates: "2024",
+      dates: "2026",
       active: true,
       description: "Website for a barbershop.",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
