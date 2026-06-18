@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 
@@ -15,16 +14,15 @@ export function LanguageToggle({ className }: { className?: string }) {
   }
 
   return (
-    <Button
+    <button
       type="button"
-      variant="link"
-      size="icon"
-      className={cn(className)}
       onClick={toggle}
+      className={cn(
+        "size-full flex items-center justify-center text-xs font-bold",
+        className
+      )}
     >
-      <span className="text-xs font-bold leading-none">
-        {current === "en" ? "EN" : "ES"}
-      </span>
-    </Button>
+      {current === "en" ? "EN" : "ES"}
+    </button>
   );
 }

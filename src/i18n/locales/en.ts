@@ -34,6 +34,9 @@ const en = {
   hackathonsDescription:
     "During my time in university, I attended {{count}}+ hackathons. People from around the country would come together and build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.",
 
+  // Hero greeting
+  greeting: "Hi, I'm",
+
   // Navbar
   language: "Language",
 } as const;

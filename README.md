@@ -1,47 +1,36 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Portfolio
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+Personal fork of [dillionverma/portfolio](https://github.com/dillionverma/portfolio) — a Next.js + shadcn/ui + Magic UI portfolio template. Feel free to fork this repo and make it your own.
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+## What's different from the original
 
-# Features
+- **i18n (EN/ES)** — browser language auto-detection, toggle button in navbar, localStorage persistence
+- **Updated packages** — Next.js 16, Tailwind CSS v4, latest shadcn/ui
+- **Certifications section** — dedicated section for certs alongside education
+- **Custom favicon & assets**
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## Getting Started
 
-# Getting Started Locally
-
-1. Clone this repository to your local machine:
+1. Clone and install
 
    ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
-
-2. Move to the cloned directory
-
-   ```bash
+   git clone https://github.com/mgodoyeclipta/portfolio
    cd portfolio
+   npm install
    ```
 
-3. Install dependencies:
+2. Run locally
 
    ```bash
-   pnpm install
+   npm run dev
    ```
 
-4. Start the local Server:
+3. Edit [`src/data/resume.tsx`](./src/data/resume.tsx) — single source of truth for all content.
 
-   ```bash
-   pnpm dev
-   ```
+## Stack
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+Next.js · TypeScript · Tailwind CSS v4 · shadcn/ui · Magic UI · Framer Motion · i18next · Vercel
 
-# License
+## License
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+MIT — same as the [original](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
