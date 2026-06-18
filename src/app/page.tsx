@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import BlurFade from "@/components/magicui/blur-fade";
-import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
@@ -14,11 +13,13 @@ import WorkSection from "@/components/section/work-section";
 import { ArrowUpRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { AuroraText } from "@/components/magicui/aurora-text";
+import { HyperText, useHyperText } from "@/components/magicui/hyper-text";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   const { t } = useTranslation();
+  const scrambledSummary = useHyperText(t("summary"));
   return (
     <main className="min-h-dvh flex flex-col gap-14 relative">
       <section id="hero">
@@ -27,15 +28,15 @@ export default function Page() {
             <div className="gap-2 flex flex-col order-2 md:order-1">
               <BlurFade delay={BLUR_FADE_DELAY} yOffset={8}>
                 <h1 className="text-4xl font-semibold tracking-tighter sm:text-5xl lg:text-6xl">
-                  {t("greeting")}{" "}
+                  <HyperText>{t("greeting")}</HyperText>{" "}
                   <AuroraText>{DATA.name.split(" ")[0]}</AuroraText>
                 </h1>
               </BlurFade>
-              <BlurFadeText
-                className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={t("description")}
-              />
+              <BlurFade delay={BLUR_FADE_DELAY} yOffset={8}>
+                <p className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl">
+                  <HyperText>{t("description")}</HyperText>
+                </p>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-28 md:size-36 border rounded-full shadow-lg ring-4 ring-muted">
@@ -49,13 +50,11 @@ export default function Page() {
       <section id="about">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
-            <h2 className="text-2xl font-bold">{t("about")}</h2>
+            <h2 className="text-2xl font-bold"><HyperText>{t("about")}</HyperText></h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
-              <Markdown>
-                {t("summary")}
-              </Markdown>
+              <Markdown>{scrambledSummary}</Markdown>
             </div>
           </BlurFade>
         </div>
@@ -63,7 +62,7 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-2xl font-bold">{t("workExperience")}</h2>
+            <h2 className="text-2xl font-bold"><HyperText>{t("workExperience")}</HyperText></h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
             <WorkSection />
@@ -73,7 +72,7 @@ export default function Page() {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-2xl font-bold">{t("education")}</h2>
+            <h2 className="text-2xl font-bold"><HyperText>{t("education")}</HyperText></h2>
           </BlurFade>
           <div className="flex flex-col gap-8">
             {DATA.education.map((education, index) => (
@@ -109,7 +108,7 @@ export default function Page() {
                   </div>
                   <div className="flex items-center gap-1 text-sm tabular-nums text-muted-foreground text-right flex-none">
                     <span>
-                      {education.start} - {(!education.end || education.end === "Present") ? t("present") : education.end}
+                      {education.start} - {(!education.end || education.end === "Present") ? <HyperText>{t("present")}</HyperText> : education.end}
                     </span>
                   </div>
                 </Link>
@@ -126,7 +125,7 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-2xl font-bold">{t("skills")}</h2>
+            <h2 className="text-2xl font-bold"><HyperText>{t("skills")}</HyperText></h2>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
             {DATA.skills.map((skill, id) => (

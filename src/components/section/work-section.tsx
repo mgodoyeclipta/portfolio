@@ -2,6 +2,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { HyperText } from "@/components/magicui/hyper-text";
 import Markdown from "react-markdown";
 import {
   Accordion,
@@ -74,7 +75,7 @@ export default function WorkSection() {
               </div>
               <div className="flex items-center gap-1 text-sm tabular-nums text-muted-foreground text-right flex-none">
                 <span>
-                  {work.start} - {(!work.end || work.end === "Present") ? t("present") : work.end}
+                  {work.start} - {(!work.end || work.end === "Present") ? <HyperText>{t("present")}</HyperText> : work.end}
                 </span>
               </div>
             </div>

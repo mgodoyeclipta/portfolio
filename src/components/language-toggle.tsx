@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
+import { flushSync } from "react-dom";
 import { cn } from "@/lib/utils";
 
 export function LanguageToggle({ className }: { className?: string }) {
@@ -9,8 +10,17 @@ export function LanguageToggle({ className }: { className?: string }) {
 
   function toggle() {
     const next = current === "en" ? "es" : "en";
-    localStorage.setItem("portfolio-language", next);
-    i18n.changeLanguage(next);
+    const apply = () => {
+      flushSync(() => {
+        localStorage.setItem("portfolio-language", next);
+        i18n.changeLanguage(next);
+      });
+    };
+    if (typeof document.startViewTransition !== "function") {
+      apply();
+      return;
+    }
+    document.startViewTransition(apply);
   }
 
   return (

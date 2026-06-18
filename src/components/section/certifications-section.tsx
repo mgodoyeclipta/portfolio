@@ -5,6 +5,7 @@ import Link from "next/link";
 import { DATA } from "@/data/resume";
 import { ArrowUpRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { HyperText } from "@/components/magicui/hyper-text";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -15,7 +16,7 @@ export default function CertificationsSection() {
   return (
     <div className="flex min-h-0 flex-col gap-y-6">
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <h2 className="text-xl font-bold">{t("certifications")}</h2>
+        <h2 className="text-xl font-bold"><HyperText>{t("certifications")}</HyperText></h2>
       </BlurFade>
       <div className="flex flex-col gap-8">
         {DATA.certifications.map((cert, index) => {
