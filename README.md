@@ -1,7 +1,5 @@
 # Portfolio
 
-Personal fork of [dillionverma/portfolio](https://github.com/dillionverma/portfolio) — a Next.js + shadcn/ui + Magic UI portfolio template. Feel free to fork this repo and make it your own.
-
 **Live demo:** https://portfolio-jet-one-j56ysj3a74.vercel.app/
 
 ## What's different from the original
@@ -37,5 +35,8 @@ Personal fork of [dillionverma/portfolio](https://github.com/dillionverma/portfo
 Next.js · TypeScript · Tailwind CSS v4 · shadcn/ui · Magic UI · Framer Motion · i18next · Vercel
 
 ## License
+
+This is a Fork of [dillionverma/portfolio](https://github.com/dillionverma/portfolio) but modified for personal purposes
+
 
 MIT — same as the [original](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
