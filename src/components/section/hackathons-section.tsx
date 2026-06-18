@@ -43,16 +43,16 @@ export default function HackathonsSection() {
               </TimelineConnectItem>
               <div className="flex flex-1 flex-col justify-start gap-2 min-w-0">
                 {hackathon.dates && (
-                  <time className="text-xs text-muted-foreground">{hackathon.dates}</time>
+                  <time className="text-sm text-muted-foreground">{hackathon.dates}</time>
                 )}
                 {hackathon.title && (
                   <h3 className="font-semibold leading-none">{hackathon.title}</h3>
                 )}
                 {hackathon.location && (
-                  <p className="text-sm text-muted-foreground">{hackathon.location}</p>
+                  <p className="text-base text-muted-foreground">{hackathon.location}</p>
                 )}
                 {hackathon.description && (
-                  <p className="text-sm text-muted-foreground leading-relaxed wrap-break-word">
+                  <p className="text-base text-muted-foreground leading-relaxed wrap-break-word">
                     {hackathon.description}
                   </p>
                 )}

@@ -67,19 +67,19 @@ export default function WorkSection() {
                       />
                     </span>
                   </div>
-                  <div className="font-sans text-sm text-muted-foreground">
+                  <div className="font-sans text-base text-muted-foreground">
                     {work.title}
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
+              <div className="flex items-center gap-1 text-sm tabular-nums text-muted-foreground text-right flex-none">
                 <span>
                   {work.start} - {(!work.end || work.end === "Present") ? t("present") : work.end}
                 </span>
               </div>
             </div>
           </AccordionTrigger>
-          <AccordionContent className="p-0 ml-13 text-xs sm:text-sm text-muted-foreground">
+          <AccordionContent className="p-0 ml-13 text-sm sm:text-base leading-relaxed text-muted-foreground">
             <Markdown>{work.description}</Markdown>
           </AccordionContent>
         </AccordionItem>
