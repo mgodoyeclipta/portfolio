@@ -196,14 +196,14 @@ export const DATA = {
   ],
   certifications: [
     {
-      name: "Performance Hands On",
+      name: "Performance in Java (Hands On)",
       issuer: "Egg Live",
       logoUrl: "/egglive_logo.jpeg",
       date: "Jul 2025",
       href: "",
     },
     {
-      name: "Curso Básico de MongoDB",
+      name: "MongoDB: The Complete Developer's Guide",
       issuer: "Platzi",
       logoUrl: "/platzi_inc_logo.jpeg",
       date: "Aug 2022",
@@ -238,7 +238,7 @@ export const DATA = {
       href: "",
     },
     {
-      name: "Visual Basic .NET Programming for Complete Beginners",
+      name: "Visual Basic .NET Programming",
       issuer: "Udemy",
       logoUrl: "/udemy_logo.jpeg",
       date: "2021",
